@@ -30,5 +30,12 @@ startButton.addEventListener('click', () => {
     }, 1000);
 })
 
+const resetButton= document.getElementById("resetBtn");
+ resetButton.addEventListener('click',()=>{
+   clearInterval(timer);
+   countdown.textContent="00d 00h 00m 00s";
+   document.getElementById("targetDate").value="";
+ })
+
 
 
